@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+@layer utilities {
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+  .animation-delay-500 {
+    animation-delay: 0.5s;
+  }
+}
+@layer components {
+  .container {
+    @apply w-full max-w-[1320px] mx-auto px-4 md:px-8;
+  }
+  .heading2 {
+    @apply font-roboto font-semibold sm:text-[42px] text-[32px] text-white sm:leading-[76.8px] leading-[66px] w-full;
+  }
+  .paragraph {
+    @apply font-roboto font-normal text-[17px] leading-[30.8px];
+  }
+  .flexCenter {
+    @apply flex justify-center items-center;
+  }
+  .flexBetween {
+    @apply flex justify-between items-center;
+  }
+  .circle {
+    @apply hidden lg:block absolute w-[400px] h-[400px] rounded-full opacity-20 filter blur-2xl animate-blob;
+  }
+  .section {
+    @apply container flex flex-col lg:flex-row lg:justify-between  items-center;
+  }
+}
+
+.custom-shape-divider-bottom-1675609529 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1675609529 svg {
+  position: relative;
+  display: block;
+  width: calc(137% + 1.3px);
+  height: 87px;
+}
+
+.custom-shape-divider-bottom-1675609529 .shape-fill {
+  fill: #ffffff;
+}
